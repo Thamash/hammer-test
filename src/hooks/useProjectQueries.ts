@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { projectClient } from '@/lib/api/client';
-import { ProjectStatus } from '@/common/types';
 import { toast } from 'sonner';
 import { projectSelectors, useProjectStore } from '@/stores/project';
 
