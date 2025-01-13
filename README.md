@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎯 Project Management Dashboard
 
-## Getting Started
+This project is a test exercise for Hammer Agency, implementing a project management dashboard based on a Figma design. The application features a clean, modern interface for managing and filtering project data.
 
-First, run the development server:
+## ✨ Features
 
+- **Project Listing**: View all projects in a paginated table format
+- **Search Functionality**:
+  - Search by project name
+  - Search by project ID
+- **Status Filtering**: Filter projects by their current status using the status dropdown
+- **Responsive Design**: Implemented according to Figma specifications
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js with TypeScript
+- **UI Components**: Material UI
+- **State Management**: Zustand
+- **Data Handling**:
+  - TanStack Table for table management
+  - TanStack Query for data caching
+- **Mock Data**: Utilizes mock data and mock client for demonstration purposes
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (version 20.17.0 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+mocks/              # Mock data and client
+src/
+├── app/           # Next.js App Router directory
+├── common/         # Common data and types
+├── common/         # Common data and types
+├── components/     # React components
+├── hooks/          # Custom hooks
+├── store/          # Zustand store configurations
+├── lib/            # Mock API client and Utility functions
+├── config/         # Config files
+└── modules/        # Modules using in pages
+```
 
-## Learn More
+## 📜 Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Runs the development server
+- `npm run build` - Builds the application for production
+- `npm start` - Starts the production server
+- `npm run lint` - Runs the linter
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The implementation follows the provided Figma design specifications. The design system implements consistent spacing, typography, and color schemes throughout the application.
 
-## Deploy on Vercel
+## 📝 Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- This is a demonstration project focusing on the All Projects subpage
+- The application uses mock data as there is no backend implementation
+- The search and filter functionalities are fully implemented using the mock data
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+Thamash
+
+## ⚖️ License
+
+This project is part of a technical assessment for Hammer Agency.

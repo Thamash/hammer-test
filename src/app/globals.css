@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .menu-item-collapsed {
+    @apply !block text-xxs text-center w-full px-1;
+  }
+  .menu-item-collapsed {
+    @apply !block text-center w-full;
+  }
+}
