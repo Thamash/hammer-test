@@ -34,6 +34,6 @@ export const useProjectSearch = () => {
       }
       return response.data;
     },
-    enabled: Boolean(searchText || statusFilter !== ProjectStatus.ALL),
+    enabled: Boolean(searchText || statusFilter),
   });
 };
